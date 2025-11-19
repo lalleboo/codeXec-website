@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    --primary-color: #22AAA1;
+}
+
+/* Start header*/
+
+.container {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.nav-bar {
+    padding-bottom: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
+
+.nav-bar .container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar .container ul {
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+.nav-bar .container ul li {
+    padding: 0 15px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+}
+.nav-bar .container h2 {
+    margin: auto 0;
+    color: var(--primary-color);
+}
+
+.nav-bar .container ul li::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: calc(100% - 30px);
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    bottom: 0;
+    left: 15px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+.nav-bar .container ul li:hover::before {
+    transform: scaleX(1);
+}
+/* Section content */
+.con {
+    margin-top: 20px;
+}
+.con .container {
+    display: flex;
+    justify-content: space-between;
+}
+.con .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    opacity: .8;
+}
+.con h2 {
+    margin: 0;
+    padding-top: 20px;
+}
+.con span {
+    color: var(--primary-color);
+}
+.con button {
+    width: 180px;
+    padding: 10px 30px;
+    margin-top: 50px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-size: 18px;
+    transition: linear 0.3s;
+}
+.social-media {
+position: absolute;
+    bottom: 20px;
+    left: 4%;
+    width: 200px;
+}
+.social-media i {
+    padding-right: 30px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+.social-media i:hover {
+    color: var(--primary-color);
+}
+button:hover{
+    background-color: white;
+    color: var(--primary-color);
+    border: var(--primary-color) solid 1px;
+}
+
+/* media */
